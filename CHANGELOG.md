@@ -9,3 +9,7 @@
 ## 0.2.0
 
 - Change code style to maps for easy transformations
+
+## 0.2.1
+
+- Update README.md
