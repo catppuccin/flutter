@@ -1,15 +1,14 @@
 import 'package:catppuccin/src/catppuccin_base.dart';
 
 void main() {
-  Flavour latte = variants[FlavourNames.latte]!;
-  Flavour frappe = variants[FlavourNames.frappe]!;
-  Flavour machhiato = variants[FlavourNames.macchiato]!;
-  Flavour mocha = variants[FlavourNames.mocha]!;
-
-  printColored("Latte base color", latte.base().rgb);
-  printColored("Frappe overlay0 color", frappe.overlay0().rgb);
-  printColored("Macchiato sky color", machhiato.sky().rgb);
-  printColored("Mocha red color", mocha.red().rgb);
+  printColored('Hello, world!',
+      variants[FlavourNames.latte]![FlavourColorKeys.pink]!.rgb);
+  printColored('Hello, world!',
+      variants[FlavourNames.frappe]![FlavourColorKeys.red]!.rgb);
+  printColored('Hello, world!',
+      variants[FlavourNames.macchiato]![FlavourColorKeys.flamingo]!.rgb);
+  printColored('Hello, world!',
+      variants[FlavourNames.mocha]![FlavourColorKeys.lavender]!.rgb);
 }
 
 void printColored(String text, List<int> rgb) {

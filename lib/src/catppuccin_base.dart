@@ -3,37 +3,7 @@ import 'flavours/latte.dart';
 import 'flavours/machhiato.dart';
 import 'flavours/mocha.dart';
 
-/// Represents a flavor theme with color information.
-abstract class Flavour {
-  ColorInfo rosewater();
-  ColorInfo flamingo();
-  ColorInfo pink();
-  ColorInfo mauve();
-  ColorInfo red();
-  ColorInfo maroon();
-  ColorInfo peach();
-  ColorInfo yellow();
-  ColorInfo green();
-  ColorInfo teal();
-  ColorInfo sky();
-  ColorInfo sapphire();
-  ColorInfo blue();
-  ColorInfo lavender();
-  ColorInfo text();
-  ColorInfo subtext1();
-  ColorInfo subtext0();
-  ColorInfo overlay2();
-  ColorInfo overlay1();
-  ColorInfo overlay0();
-  ColorInfo surface2();
-  ColorInfo surface1();
-  ColorInfo surface0();
-  ColorInfo crust();
-  ColorInfo mantle();
-  ColorInfo base();
-}
-
-/// Represents color information with RGB, hex, and HSL values.
+/// Represents the color information with RGB, hex, and HSL values.
 class ColorInfo {
   /// The RGB values of the color.
   final List<int> rgb;
@@ -47,18 +17,43 @@ class ColorInfo {
   ColorInfo({required this.rgb, required this.hex, required this.hsl});
 }
 
-/// Enumerates available flavour names.
+/// Enumerates the available color keys.
+enum FlavourColorKeys {
+  rosewater,
+  flamingo,
+  pink,
+  mauve,
+  red,
+  maroon,
+  peach,
+  yellow,
+  green,
+  teal,
+  sky,
+  sapphire,
+  blue,
+  lavender,
+  text,
+  subtext1,
+  subtext0,
+  overlay2,
+  overlay1,
+  overlay0,
+  surface2,
+  surface1,
+  surface0,
+  crust,
+  mantle,
+  base,
+}
+
+/// Enumerates the available flavour names.
 enum FlavourNames { latte, frappe, macchiato, mocha }
 
-/// A map containing instances of different flavors.
-Map<FlavourNames, Flavour> variants = {
-  FlavourNames.latte: Latte(),
-  FlavourNames.frappe: Frappe(),
-  FlavourNames.macchiato: Machhiato(),
-  FlavourNames.mocha: Mocha()
+/// A map containing the instances of different flavors.
+Map<FlavourNames, Map<FlavourColorKeys, ColorInfo>> variants = {
+  FlavourNames.latte: latte,
+  FlavourNames.frappe: frappe,
+  FlavourNames.macchiato: machhiato,
+  FlavourNames.mocha: mocha,
 };
-
-/// Returns the instance of the specified flavour name
-Flavour getFlavour(FlavourNames flavourName) {
-  return variants[FlavourNames.latte]!;
-}

@@ -4,10 +4,10 @@ import 'package:test/test.dart';
 void main() {
   group('Flavour tests', () {
     test('Getting valid flavours', () {
-      expect(getFlavour(FlavourNames.latte), isNotNull);
-      expect(getFlavour(FlavourNames.frappe), isNotNull);
-      expect(getFlavour(FlavourNames.macchiato), isNotNull);
-      expect(getFlavour(FlavourNames.mocha), isNotNull);
+      expect(variants[FlavourNames.latte], isNotNull);
+      expect(variants[FlavourNames.frappe], isNotNull);
+      expect(variants[FlavourNames.macchiato], isNotNull);
+      expect(variants[FlavourNames.mocha], isNotNull);
     });
   });
 }
