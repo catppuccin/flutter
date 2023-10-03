@@ -40,8 +40,8 @@ Open your `pubspec.yaml` file and add the following line under the `dependencies
 import 'package:catppuccin/src/catppuccin_base.dart';
 
 void main() {
-  List<int> pink = variants[FlavourNames.mocha]![FlavourColorKeys.blue]!.rgb;
-  print(pink); //[137, 180, 250]
+  List<int> blue = variants[FlavourNames.mocha]![FlavourColorKeys.blue]!.rgb;
+  print(blue); //[137, 180, 250]
 }
 
 ```
