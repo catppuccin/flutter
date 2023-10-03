@@ -4,6 +4,13 @@
     Catppuccin for <a href="https://pub.dev">Dart</a>
     <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
+<p align="center">
+	<a href="https://github.com/useEffects/catppuccin-dart/stargazers"><img src="https://img.shields.io/github/stars/useEffects/catppuccin-dart?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+	<a href="https://github.com/useEffects/catppuccin-dart/issues"><img src="https://img.shields.io/github/issues/useEffects/catppuccin-dart?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+	<a href="https://github.com/useEffects/catppuccin-dart/contributors"><img src="https://img.shields.io/github/contributors/useEffects/catppuccin-dart?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+</p>
+
+&nbsp;
 
 Get started with `example/main.dart`
 
