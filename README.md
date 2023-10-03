@@ -73,6 +73,10 @@ If you are looking to contribute, please read through our
 [CONTRIBUTING.md](https://github.com/catppuccin/.github/blob/main/CONTRIBUTING.md)
 first!
 
+## 💝 Thanks to
+
+-   [useEffects](https://github.com/useEffects)
+
 &nbsp;
 
 <p align="center">
