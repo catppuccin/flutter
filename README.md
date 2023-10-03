@@ -9,8 +9,42 @@ Get started with `example/main.dart`
 
 <img src="https://raw.githubusercontent.com/Aprilswind/catppuccin-dart/main/assets/output.png">
 
+## Installation
+To use Catppuccin in a Dart / Flutter project, you can follow these steps:
+1. **Add Catppuccin to Your `pubspec.yaml` File:**
+Open your `pubspec.yaml` file and add the following line under the `dependencies` section:
+    ```yaml
+    dependencies:
+        # ...
+        catppuccin: ^0.1.0
+        # ...
+    ```
+2. After adding catppuccin to your `pubspec.yaml` file, run the following command in your terminal to fetch the packages:
+    ```bash
+    flutter pub get
+    ```
+    If you are not building a flutter app, you can use:
+    ```bash
+    dart pub get
+    ```
+
+## Usage
+```dart
+import 'package:catppuccin/src/catppuccin_base.dart';
+
+void main() {
+  List<int> pink = variants[FlavourNames.mocha]![FlavourColorKeys.blue]!.rgb;
+  print(pink); //[137, 180, 250]
+}
+
+```
+* `FlavourColorKeys` and `FlavourNames` are enums that are used to represent fixed sets of color keys and flavor names, respectively.
+* `ColorInfo` encapsulates color information, including RGB, hex, and HSL values.
+* `variants` is a map that associates flavor names `FlavourNames` with color information `ColorInfo` for various color keys `FlavourColorKeys`.
+
 ## Tips for flutter projects
-Use the below code snipet to convert the value field of the map to `Color` of the flutter library.
+Use the below code snipet to convert the value field of the map to the `Color` data structure of the flutter library.
+
 ```dart
 import 'package:catppuccin/catppuccin.dart';
 import 'package:flutter/material.dart';
@@ -27,23 +61,19 @@ Map<FlavourColorKeys, Color> mocha =
 Color pink = mocha[FlavourColorKeys.pink]!;
 ```
 
-## Frequently Asked Questions
+## Contributing
+If you are looking to contribute, please read through our
+[CONTRIBUTING.md](https://github.com/catppuccin/.github/blob/main/CONTRIBUTING.md)
+first!
 
-### 1) How do I use Catppuccin in a Dart / Flutter project?
-To use Catppuccin in a Dart / Flutter project, you can follow these steps:
-1. **Add Catppuccin to Your `pubspec.yaml` File:**
-Open your `pubspec.yaml` file and add the following line under the `dependencies` section:
-```yaml
-dependencies:
-    # ...
-    catppuccin: ^0.1.0
-    # ...
-```
-2. After adding catppuccin to your `pubspec.yaml` file, run the following command in your terminal to fetch the packages:
-```bash
-flutter pub get
-```
-If you are not building a flutter app, you can use:
-```bash
-dart pub get
-```
+&nbsp;
+
+<p align="center">
+	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" />
+</p>
+<p align="center">
+	Copyright &copy; 2022-present <a href="https://github.com/catppuccin" target="_blank">Catppuccin Org</a>
+</p>
+<p align="center">
+	<a href="https://github.com/catppuccin/catppuccin/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=d9e0ee&colorA=363a4f&colorB=b7bdf8"/></a>
+</p>
