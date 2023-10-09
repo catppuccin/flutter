@@ -40,14 +40,14 @@ Open your `pubspec.yaml` file and add the following line under the `dependencies
 import 'package:catppuccin/src/catppuccin_base.dart';
 
 void main() {
-  List<int> blue = variants[FlavourNames.mocha]![FlavourColorKeys.blue]!.rgb;
+  List<int> blue = variants[FlavorNames.mocha]![FlavorColorKeys.blue]!.rgb;
   print(blue); //[137, 180, 250]
 }
 
 ```
-* `FlavourColorKeys` and `FlavourNames` are enums that are used to represent fixed sets of color keys and flavor names, respectively.
+* `FlavorColorKeys` and `FlavorNames` are enums that are used to represent fixed sets of color keys and flavor names, respectively.
 * `ColorInfo` encapsulates color information, including RGB, hex, and HSL values.
-* `variants` is a map that associates flavor names `FlavourNames` with color information `ColorInfo` for various color keys `FlavourColorKeys`.
+* `variants` is a map that associates flavor names `FlavorNames` with color information `ColorInfo` for various color keys `FlavorColorKeys`.
 
 ## Tips for flutter projects
 Use the below code snipet to convert the value field of the map to the `Color` data structure of the flutter library.
@@ -56,16 +56,16 @@ Use the below code snipet to convert the value field of the map to the `Color` d
 import 'package:catppuccin/catppuccin.dart';
 import 'package:flutter/material.dart';
 
-Map<FlavourColorKeys, Color> convertColorInfoMapToColorMap(
-    Map<FlavourColorKeys, ColorInfo> colorInfoMap) {
+Map<FlavorColorKeys, Color> convertColorInfoMapToColorMap(
+    Map<FlavorColorKeys, ColorInfo> colorInfoMap) {
   return colorInfoMap.map((key, colorInfo) => MapEntry(key,
       Color.fromRGBO(colorInfo.rgb[0], colorInfo.rgb[1], colorInfo.rgb[2], 1)));
 }
 
-Map<FlavourColorKeys, Color> mocha =
-    convertColorInfoMapToColorMap(variants[FlavourNames.mocha]!);
+Map<FlavorColorKeys, Color> mocha =
+    convertColorInfoMapToColorMap(variants[FlavorNames.mocha]!);
 
-Color pink = mocha[FlavourColorKeys.pink]!;
+Color pink = mocha[FlavorColorKeys.pink]!;
 ```
 
 ## Contributing

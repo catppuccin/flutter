@@ -1,7 +1,7 @@
-import 'flavours/frappe.dart';
-import 'flavours/latte.dart';
-import 'flavours/machhiato.dart';
-import 'flavours/mocha.dart';
+import 'flavors/frappe.dart';
+import 'flavors/latte.dart';
+import 'flavors/machhiato.dart';
+import 'flavors/mocha.dart';
 
 /// Represents the color information with RGB, hex, and HSL values.
 class ColorInfo {
@@ -18,7 +18,7 @@ class ColorInfo {
 }
 
 /// Enumerates the available color keys.
-enum FlavourColorKeys {
+enum FlavorColorKeys {
   rosewater,
   flamingo,
   pink,
@@ -47,13 +47,13 @@ enum FlavourColorKeys {
   base,
 }
 
-/// Enumerates the available flavour names.
-enum FlavourNames { latte, frappe, macchiato, mocha }
+/// Enumerates the available flavor names.
+enum FlavorNames { latte, frappe, macchiato, mocha }
 
 /// A map containing the instances of different flavors.
-Map<FlavourNames, Map<FlavourColorKeys, ColorInfo>> variants = {
-  FlavourNames.latte: latte,
-  FlavourNames.frappe: frappe,
-  FlavourNames.macchiato: machhiato,
-  FlavourNames.mocha: mocha,
+Map<FlavorNames, Map<FlavorColorKeys, ColorInfo>> variants = {
+  FlavorNames.latte: latte,
+  FlavorNames.frappe: frappe,
+  FlavorNames.macchiato: machhiato,
+  FlavorNames.mocha: mocha,
 };
