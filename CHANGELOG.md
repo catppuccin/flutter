@@ -13,3 +13,7 @@
 ## 0.2.1
 
 - Update README.md
+
+## 0.2.2
+
+- Change spelling from flavour to flavor
