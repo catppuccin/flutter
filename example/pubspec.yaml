@@ -30,6 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  # catppuccin_flutter: ^0.3.0
   catppuccin_flutter:
     path: ..
 

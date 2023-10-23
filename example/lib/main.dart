@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: catppuccinTheme(),
+      theme: catppuccinTheme(catppuccin.mocha),
       home: const MyHomePage(
         title: 'Catppuccin Theme',
       ),
@@ -61,7 +61,7 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final flavor = ctp.mocha;
+    final flavor = catppuccin.mocha;
     final colorMap = getColorMap(flavor);
 
     final random = Random(1);

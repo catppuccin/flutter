@@ -1,8 +1,7 @@
 import 'package:catppuccin_flutter/catppuccin_flutter.dart';
 import 'package:flutter/material.dart';
 
-ThemeData catppuccinTheme() {
-  Flavor flavor = ctp.latte;
+ThemeData catppuccinTheme(Flavor flavor) {
   Color primaryColor = flavor.mauve;
   Color secondaryColor = flavor.pink;
   return ThemeData(

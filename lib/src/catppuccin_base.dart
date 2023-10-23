@@ -34,6 +34,6 @@ typedef Flavor = ({
   Color base,
 });
 
-typedef Ctp = ({Flavor latte, Flavor frappe, Flavor macchiato, Flavor mocha});
+typedef Catppuccin = ({Flavor latte, Flavor frappe, Flavor macchiato, Flavor mocha});
 
-Ctp ctp = (latte: latte, frappe: frappe, macchiato: macchiato, mocha: mocha);
+Catppuccin catppuccin = (latte: latte, frappe: frappe, macchiato: macchiato, mocha: mocha);
