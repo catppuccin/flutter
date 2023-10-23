@@ -42,7 +42,7 @@ Open your `pubspec.yaml` file and add the following line under the `dependencies
     ```yaml
     dependencies:
         # ...
-        catppuccin: ^0.2.2
+        catppuccin: ^0.3.0
         # ...
     ```
 2. After adding catppuccin to your `pubspec.yaml` file, run the following command in your terminal to fetch the packages:

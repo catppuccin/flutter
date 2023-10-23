@@ -1,4 +1,4 @@
-import 'package:catppuccin_flutter/catppuccin.dart';
+import 'package:catppuccin_flutter/catppuccin_flutter.dart';
 import 'package:example/theme.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';

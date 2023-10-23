@@ -17,3 +17,7 @@
 ## 0.2.2
 
 - Change spelling from flavour to flavor
+
+## 0.3.0
+
+- Redesign to target only flutter development and not dart
