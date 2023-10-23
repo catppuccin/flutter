@@ -45,7 +45,7 @@ Open your `pubspec.yaml` file and add the following line under the `dependencies
         catppuccin_flutter: ^0.3.1
         # ...
     ```
-2. After adding catppuccin to your `pubspec.yaml` file, run the following command in your terminal to fetch the packages:
+2. After adding catppuccin_flutter to your `pubspec.yaml` file, run the following command in your terminal to fetch the packages:
     ```bash
     flutter pub get
     ```
