@@ -21,3 +21,7 @@
 ## 0.3.0
 
 - Redesign to target only flutter development and not dart
+
+## 0.3.1
+
+- Use catppuccin instead of ctp
