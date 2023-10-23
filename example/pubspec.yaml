@@ -30,9 +30,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  # catppuccin_flutter: ^0.3.0
-  catppuccin_flutter:
-    path: ..
+  catppuccin_flutter: ^0.3.1
+  # catppuccin_flutter:
+  #   path: ..
 
 
   # The following adds the Cupertino Icons font to your application.

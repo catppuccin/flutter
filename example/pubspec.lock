@@ -20,10 +20,11 @@ packages:
   catppuccin_flutter:
     dependency: "direct main"
     description:
-      path: ".."
-      relative: true
-    source: path
-    version: "0.3.0"
+      name: catppuccin_flutter
+      sha256: "38214b673aa32705f43af1c55f626cff8761def54a806b652356170b98535ae5"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.3.1"
   characters:
     dependency: transitive
     description:
