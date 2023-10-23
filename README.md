@@ -52,7 +52,7 @@ Open your `pubspec.yaml` file and add the following line under the `dependencies
 
 ## Usage
 ```dart
-import 'package:catppuccin_flutter/catppuccin.dart';
+import 'package:catppuccin_flutter/catppuccin_flutter.dart';
 
 Flavor flavor = ctp.latte;
 Color primaryColor = flavor.mauve;
