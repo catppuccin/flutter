@@ -1,7 +1,7 @@
 <h3 align="center">
     <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
     <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
-    Catppuccin for <a href="https://pub.dev">Dart</a>
+    Catppuccin for <a href="https://flutter.dev">Flutter</a>
     <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 <p align="center">
@@ -12,12 +12,31 @@
 
 &nbsp;
 
-Get started with `example/main.dart`
+Get started with [example](https://github.com/useEffects/catppuccin-dart/tree/main/example)
 
-<img src="https://raw.githubusercontent.com/Aprilswind/catppuccin-dart/main/assets/output.png">
+<img src="https://raw.githubusercontent.com/useEffects/catppuccin-dart/main/assets/result.webp">
+
+## Previews
+
+<details>
+<summary>🌻 Latte</summary>
+<img src="https://raw.githubusercontent.com/useEffects/catppuccin-dart/main/assets/screenshots/latte.png"/>
+</details>
+<details>
+<summary>🪴 Frappé</summary>
+<img src="https://raw.githubusercontent.com/useEffects/catppuccin-dart/main/assets/screenshots/frappe.png"/>
+</details>
+<details>
+<summary>🌺 Macchiato</summary>
+<img src="https://raw.githubusercontent.com/useEffects/catppuccin-dart/main/assets/screenshots/macchiato.png"/>
+</details>
+<details>
+<summary>🌿 Mocha</summary>
+<img src="https://raw.githubusercontent.com/useEffects/catppuccin-dart/main/assets/screenshots/mocha.png"/>
+</details>
 
 ## Installation
-To use Catppuccin in a Dart / Flutter project, you can follow these steps:
+To use Catppuccin in a Flutter project, you can follow these steps:
 1. **Add Catppuccin to Your `pubspec.yaml` File:**
 Open your `pubspec.yaml` file and add the following line under the `dependencies` section:
     ```yaml
@@ -30,43 +49,17 @@ Open your `pubspec.yaml` file and add the following line under the `dependencies
     ```bash
     flutter pub get
     ```
-    If you are not building a flutter app, you can use:
-    ```bash
-    dart pub get
-    ```
 
 ## Usage
 ```dart
-import 'package:catppuccin/src/catppuccin_base.dart';
+import 'package:catppuccin_flutter/catppuccin.dart';
 
-void main() {
-  List<int> blue = variants[FlavorNames.mocha]![FlavorColorKeys.blue]!.rgb;
-  print(blue); //[137, 180, 250]
-}
-
+Flavor flavor = ctp.latte;
+Color primaryColor = flavor.mauve;
+Color secondaryColor = flavor.pink;
 ```
-* `FlavorColorKeys` and `FlavorNames` are enums that are used to represent fixed sets of color keys and flavor names, respectively.
-* `ColorInfo` encapsulates color information, including RGB, hex, and HSL values.
-* `variants` is a map that associates flavor names `FlavorNames` with color information `ColorInfo` for various color keys `FlavorColorKeys`.
-
-## Tips for flutter projects
-Use the below code snipet to convert the value field of the map to the `Color` data structure of the flutter library.
-
-```dart
-import 'package:catppuccin/catppuccin.dart';
-import 'package:flutter/material.dart';
-
-Map<FlavorColorKeys, Color> convertColorInfoMapToColorMap(
-    Map<FlavorColorKeys, ColorInfo> colorInfoMap) {
-  return colorInfoMap.map((key, colorInfo) => MapEntry(key,
-      Color.fromRGBO(colorInfo.rgb[0], colorInfo.rgb[1], colorInfo.rgb[2], 1)));
-}
-
-Map<FlavorColorKeys, Color> mocha =
-    convertColorInfoMapToColorMap(variants[FlavorNames.mocha]!);
-
-Color pink = mocha[FlavorColorKeys.pink]!;
-```
+* `ctp` encapsulates all the flavor names, namely `latte`, `frappe`, `macchiato` and `mocha`
+* `Flavor` typedef for record, which is a collection of all the colors available.
 
 ## Contributing
 If you are looking to contribute, please read through our
