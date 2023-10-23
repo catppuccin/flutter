@@ -1,59 +1,39 @@
-import 'flavors/frappe.dart';
-import 'flavors/latte.dart';
-import 'flavors/machhiato.dart';
-import 'flavors/mocha.dart';
+import 'dart:ui';
 
-/// Represents the color information with RGB, hex, and HSL values.
-class ColorInfo {
-  /// The RGB values of the color.
-  final List<int> rgb;
+import 'package:catppuccin_flutter/src/flavors/frappe.dart';
+import 'package:catppuccin_flutter/src/flavors/latte.dart';
+import 'package:catppuccin_flutter/src/flavors/macchiato.dart';
+import 'package:catppuccin_flutter/src/flavors/mocha.dart';
 
-  /// The hexadecimal representation of the color.
-  final String hex;
+typedef Flavor = ({
+  Color rosewater,
+  Color flamingo,
+  Color pink,
+  Color mauve,
+  Color red,
+  Color maroon,
+  Color peach,
+  Color yellow,
+  Color green,
+  Color teal,
+  Color sky,
+  Color sapphire,
+  Color blue,
+  Color lavender,
+  Color text,
+  Color subtext1,
+  Color subtext0,
+  Color overlay2,
+  Color overlay1,
+  Color overlay0,
+  Color surface2,
+  Color surface1,
+  Color surface0,
+  Color crust,
+  Color mantle,
+  Color base,
+});
 
-  /// The HSL values of the color.
-  final List<int> hsl;
+typedef Ctp = ({Flavor latte, Flavor frappe, Flavor macchiato, Flavor mocha});
 
-  ColorInfo({required this.rgb, required this.hex, required this.hsl});
-}
-
-/// Enumerates the available color keys.
-enum FlavorColorKeys {
-  rosewater,
-  flamingo,
-  pink,
-  mauve,
-  red,
-  maroon,
-  peach,
-  yellow,
-  green,
-  teal,
-  sky,
-  sapphire,
-  blue,
-  lavender,
-  text,
-  subtext1,
-  subtext0,
-  overlay2,
-  overlay1,
-  overlay0,
-  surface2,
-  surface1,
-  surface0,
-  crust,
-  mantle,
-  base,
-}
-
-/// Enumerates the available flavor names.
-enum FlavorNames { latte, frappe, macchiato, mocha }
-
-/// A map containing the instances of different flavors.
-Map<FlavorNames, Map<FlavorColorKeys, ColorInfo>> variants = {
-  FlavorNames.latte: latte,
-  FlavorNames.frappe: frappe,
-  FlavorNames.macchiato: machhiato,
-  FlavorNames.mocha: mocha,
-};
+Ctp ctp = (latte: latte, frappe: frappe, macchiato: macchiato, mocha: mocha);

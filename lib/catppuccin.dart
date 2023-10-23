@@ -1,8 +1,7 @@
-/// Support for doing something awesome.
-///
-/// More dartdocs go here.
-library;
+library catppuccin_flutter;
 
-export 'src/catppuccin_base.dart';
-
-// TODO: Export any libraries intended for clients of this package.
+/// A Calculator.
+class Calculator {
+  /// Returns [value] plus 1.
+  int addOne(int value) => value + 1;
+}
