@@ -58,7 +58,7 @@ Flavor flavor = catppuccin.latte;
 Color primaryColor = flavor.mauve;
 Color secondaryColor = flavor.pink;
 ```
-* `ctp` encapsulates all the flavor names, namely `latte`, `frappe`, `macchiato` and `mocha`.
+* `catppuccin` encapsulates all the flavor names, namely `latte`, `frappe`, `macchiato` and `mocha`.
 * `Flavor` typedef for record, which is a collection of all the colors available.
 
 ## Contributing
