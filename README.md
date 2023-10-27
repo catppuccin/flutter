@@ -12,8 +12,6 @@
 
 &nbsp;
 
-Get started with [example](https://github.com/useEffects/catppuccin-dart/tree/main/example)
-
 <img src="https://raw.githubusercontent.com/useEffects/catppuccin-dart/main/assets/result.webp">
 
 ## Previews
@@ -60,6 +58,8 @@ Color secondaryColor = flavor.pink;
 ```
 * `catppuccin` encapsulates all the flavor names, namely `latte`, `frappe`, `macchiato` and `mocha`.
 * `Flavor` typedef for record, which is a collection of all the colors available.
+
+Also, you can get started with our [example](https://github.com/useEffects/catppuccin-dart/tree/main/example) to see it in action!
 
 ## Contributing
 If you are looking to contribute, please read through our
