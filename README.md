@@ -5,32 +5,32 @@
     <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 <p align="center">
-	<a href="https://github.com/useEffects/catppuccin-dart/stargazers"><img src="https://img.shields.io/github/stars/useEffects/catppuccin-dart?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-	<a href="https://github.com/useEffects/catppuccin-dart/issues"><img src="https://img.shields.io/github/issues/useEffects/catppuccin-dart?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-	<a href="https://github.com/useEffects/catppuccin-dart/contributors"><img src="https://img.shields.io/github/contributors/useEffects/catppuccin-dart?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/flutter/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/flutter?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/flutter/issues"><img src="https://img.shields.io/github/issues/catppuccin/flutter?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/flutter/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/flutter?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 &nbsp;
 
-<img src="https://raw.githubusercontent.com/useEffects/catppuccin-dart/main/assets/result.webp">
+<img src="https://raw.githubusercontent.com/catppuccin/flutter/main/assets/result.webp">
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/useEffects/catppuccin-dart/main/assets/screenshots/latte.png"/>
+<img src="https://raw.githubusercontent.com/catppuccin/flutter/main/assets/screenshots/latte.png"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/useEffects/catppuccin-dart/main/assets/screenshots/frappe.png"/>
+<img src="https://raw.githubusercontent.com/catppuccin/flutter/main/assets/screenshots/frappe.png"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/useEffects/catppuccin-dart/main/assets/screenshots/macchiato.png"/>
+<img src="https://raw.githubusercontent.com/catppuccin/flutter/main/assets/screenshots/macchiato.png"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/useEffects/catppuccin-dart/main/assets/screenshots/mocha.png"/>
+<img src="https://raw.githubusercontent.com/catppuccin/flutter/main/assets/screenshots/mocha.png"/>
 </details>
 
 ## Installation
@@ -59,7 +59,7 @@ Color secondaryColor = flavor.pink;
 * `catppuccin` encapsulates all the flavor names, namely `latte`, `frappe`, `macchiato` and `mocha`.
 * `Flavor` typedef for record, which is a collection of all the colors available.
 
-Also, you can get started with our [example](https://github.com/useEffects/catppuccin-dart/tree/main/example) to see it in action!
+Also, you can get started with our [example](https://github.com/catppuccin/flutter/tree/main/example) to see it in action!
 
 ## Contributing
 If you are looking to contribute, please read through our

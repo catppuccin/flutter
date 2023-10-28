@@ -25,3 +25,7 @@
 ## 0.3.1
 
 - Use catppuccin instead of ctp
+
+## 0.3.2
+
+- Update hrefs for transferring 
