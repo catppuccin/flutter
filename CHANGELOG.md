@@ -29,3 +29,7 @@
 ## 0.3.2
 
 - Update hrefs for transferring 
+
+## 0.1.0
+
+- Final Release
