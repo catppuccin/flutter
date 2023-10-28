@@ -30,6 +30,6 @@
 
 - Update hrefs for transferring 
 
-## 0.1.0
+## 1.0.0
 
 - Final Release
