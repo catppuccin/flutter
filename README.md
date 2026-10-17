@@ -82,9 +82,6 @@ To check the generated files without changing them:
 whiskers flutter.tera --check
 ```
 
-Commit generated Dart files alongside any template changes. The Whiskers
-GitHub Actions workflow uses the shared Catppuccin check to keep them in sync.
-
 ## 💝 Thanks to
 
 -   [useEffects](https://github.com/useEffects)
