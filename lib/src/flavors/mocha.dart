@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:catppuccin_flutter/src/catppuccin_base.dart';
 
-Flavor mocha = (
+final Flavor mocha = (
   rosewater: Color(0xFFF5E0DC),
   base: Color(0xFF1E1E2E),
   blue: Color(0xFF89B4FA),

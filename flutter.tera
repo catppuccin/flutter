@@ -1,0 +1,40 @@
+---
+whiskers:
+  version: "^2.9.0"
+  matrix:
+    - flavor
+  filename: "lib/src/flavors/{{ flavor.identifier }}.dart"
+  hex_format: "0xFF{{R}}{{G}}{{B}}{{Z}}"
+---
+import 'dart:ui';
+
+import 'package:catppuccin_flutter/src/catppuccin_base.dart';
+
+final Flavor {{ flavor.identifier }} = (
+  rosewater: Color({{ rosewater.hex }}),
+  base: Color({{ base.hex }}),
+  blue: Color({{ blue.hex }}),
+  crust: Color({{ crust.hex }}),
+  flamingo: Color({{ flamingo.hex }}),
+  green: Color({{ green.hex }}),
+  lavender: Color({{ lavender.hex }}),
+  mantle: Color({{ mantle.hex }}),
+  maroon: Color({{ maroon.hex }}),
+  mauve: Color({{ mauve.hex }}),
+  overlay0: Color({{ overlay0.hex }}),
+  overlay1: Color({{ overlay1.hex }}),
+  overlay2: Color({{ overlay2.hex }}),
+  peach: Color({{ peach.hex }}),
+  pink: Color({{ pink.hex }}),
+  red: Color({{ red.hex }}),
+  sapphire: Color({{ sapphire.hex }}),
+  sky: Color({{ sky.hex }}),
+  subtext0: Color({{ subtext0.hex }}),
+  subtext1: Color({{ subtext1.hex }}),
+  surface0: Color({{ surface0.hex }}),
+  surface1: Color({{ surface1.hex }}),
+  surface2: Color({{ surface2.hex }}),
+  teal: Color({{ teal.hex }}),
+  text: Color({{ text.hex }}),
+  yellow: Color({{ yellow.hex }}),
+);

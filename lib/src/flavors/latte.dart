@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:catppuccin_flutter/src/catppuccin_base.dart';
 
-Flavor latte = (
+final Flavor latte = (
   rosewater: Color(0xFFDC8A78),
   base: Color(0xFFEFF1F5),
   blue: Color(0xFF1E66F5),

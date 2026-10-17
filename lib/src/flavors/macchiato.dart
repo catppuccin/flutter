@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:catppuccin_flutter/src/catppuccin_base.dart';
 
-Flavor macchiato = (
+final Flavor macchiato = (
   rosewater: Color(0xFFF4DBD6),
   base: Color(0xFF24273A),
   blue: Color(0xFF8AADF4),
