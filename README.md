@@ -66,6 +66,25 @@ If you are looking to contribute, please read through our
 [CONTRIBUTING.md](https://github.com/catppuccin/.github/blob/main/CONTRIBUTING.md)
 first!
 
+## Development
+
+The four Dart palettes in `lib/src/flavors/` are generated from
+[`flutter.tera`](flutter.tera) with [Catppuccin Whiskers](https://github.com/catppuccin/whiskers).
+Install Whiskers v2.9.0 or later, then regenerate from the repository root:
+
+```sh
+whiskers flutter.tera
+```
+
+To check the generated files without changing them:
+
+```sh
+whiskers flutter.tera --check
+```
+
+Commit generated Dart files alongside any template changes. The Whiskers
+GitHub Actions workflow uses the shared Catppuccin check to keep them in sync.
+
 ## 💝 Thanks to
 
 -   [useEffects](https://github.com/useEffects)
